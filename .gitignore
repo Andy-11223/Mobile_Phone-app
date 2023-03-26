@@ -40,3 +40,10 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+.vs/slnx.sqlite
+.vs/Mobile_Phone-app/config/applicationhost.config
+.vs/Mobile_Phone-app/FileContentIndex/040f8686-e04c-4798-9c77-b3a645db8404.vsidx
+.vs/Mobile_Phone-app/FileContentIndex/0ec33f88-f418-4ae4-8ae9-71d139664d61.vsidx
+.vs/Mobile_Phone-app/FileContentIndex/5ac0969a-43f5-4e60-bdb1-d4b1f7b9615c.vsidx
+.vs/Mobile_Phone-app/FileContentIndex/c423d19c-ddf2-4471-80ab-0031bd38ec0c.vsidx
+.vs/Mobile_Phone-app/FileContentIndex/read.lock
