@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ServicesComponent } from './services/services.component';
 import { SearchComponent } from './shared/search/search.component';
 import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -23,7 +22,6 @@ import { CatalogContainerComponent } from './shared/catalog/catalog-container/ca
 @NgModule({
   declarations: [
     AppComponent,
-    ServicesComponent,
     SearchComponent,
     BreadcrumbsComponent,
     FooterComponent,
