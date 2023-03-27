@@ -18,6 +18,7 @@ import { ProductContainerComponent } from './shared/product/detail/product-conta
 import { ListContainerComponent } from './shared/product/list/list-container/list-container.component';
 import { ProductListComponent } from './shared/product/list/product-list/product-list.component';
 import { CatalogContainerComponent } from './shared/catalog/catalog-container/catalog-container.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { CatalogContainerComponent } from './shared/catalog/catalog-container/ca
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
