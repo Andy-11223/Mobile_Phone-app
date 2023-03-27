@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CatalogService } from '../../services/endpoint-catalog.service';
+import { CatalogService } from '../../services/catalog.service';
 
 @Component({
   selector: 'app-home',
@@ -11,8 +11,8 @@ export class HomeComponent implements OnInit {
   constructor(private catalogService: CatalogService) { }
 
   ngOnInit(): void {
-    this.catalogService.getCatalogInfo().subscribe(catalog => {
-      console.log(catalog);
+    this.catalogService.getCatalogContent().subscribe(categories => {
+      console.log(categories)
     })
   }
 
