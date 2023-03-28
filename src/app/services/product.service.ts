@@ -20,9 +20,9 @@ export class ProductService {
     );
   }
 
-  public getComments(): Observable<Product[]> {
-    return this.ProductEndpoint.getAllComments<Product[]>().pipe<Product[]>(
-      map((smartphones: Product[]) => smartphones)
+  public getComments(): Observable<Comment[]> {
+    return this.ProductEndpoint.getAllComments<Comment[]>().pipe<Comment[]>(
+      map((smartphones: Comment[]) => smartphones)
     );
   }
 }
