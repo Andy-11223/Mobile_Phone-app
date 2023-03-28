@@ -22,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CatalogEndpointService } from './services/endpoint-catalog.service';
 import { CatalogService } from './services/catalog.service';
 import { ProductEndpointService } from './services/endpoint-product.service';
+import { ProductService } from './services/product.service';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { ProductEndpointService } from './services/endpoint-product.service';
   providers: [
     CatalogEndpointService,
     CatalogService,
-    ProductEndpointService
+    ProductEndpointService,
+    ProductService
   ],
   bootstrap: [AppComponent]
 })
