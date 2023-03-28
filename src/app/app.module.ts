@@ -19,6 +19,9 @@ import { ListContainerComponent } from './shared/product/list/list-container/lis
 import { ProductListComponent } from './shared/product/list/product-list/product-list.component';
 import { CatalogContainerComponent } from './shared/catalog/catalog-container/catalog-container.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CatalogEndpointService } from './services/endpoint-catalog.service';
+import { CatalogService } from './services/catalog.service';
+import { ProductEndpointService } from './services/endpoint-product.service';
 
 @NgModule({
   declarations: [
@@ -44,7 +47,11 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    CatalogEndpointService,
+    CatalogService,
+    ProductEndpointService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

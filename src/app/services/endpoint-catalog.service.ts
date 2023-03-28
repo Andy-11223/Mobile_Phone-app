@@ -5,9 +5,7 @@ import { Observable } from "rxjs/internal/Observable";
 
 const DUMMY_JSON_URL = 'https://dummyjson.com/products/categories'
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class CatalogEndpointService {
 
   constructor(private http: HttpClient) { }
