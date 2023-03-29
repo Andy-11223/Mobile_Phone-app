@@ -14,8 +14,6 @@ import { CommentsComponent } from './components/comments/comments.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { MaterialGalleryComponent } from './components/material-gallery/material-gallery.component';
-import { ProductContainerComponent } from './shared/product/detail/product-container/product-container.component';
-import { ListContainerComponent } from './shared/product/list/list-container/list-container.component';
 import { ProductListComponent } from './shared/product/list/product-list/product-list.component';
 import { CatalogContainerComponent } from './shared/catalog/catalog-container/catalog-container.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -25,6 +23,8 @@ import { ProductEndpointService } from './services/endpoint-product.service';
 import { ProductService } from './services/product.service';
 import { CommentEndpointService } from './services/comment-endpoint.service';
 import { CommentsService } from './services/comment.service';
+import { ProductListContainerComponent } from './shared/product/list/list-container/product-list-container.component';
+import { ProductDetailContainerComponent } from './shared/product/detail/product-container/product-detail-container.component';
 
 @NgModule({
   declarations: [
@@ -40,8 +40,8 @@ import { CommentsService } from './services/comment.service';
     ContactsComponent,
     RegistrationComponent,
     MaterialGalleryComponent,
-    ProductContainerComponent,
-    ListContainerComponent,
+    ProductDetailContainerComponent,
+    ProductListContainerComponent,
     ProductListComponent,
     CatalogContainerComponent
   ],

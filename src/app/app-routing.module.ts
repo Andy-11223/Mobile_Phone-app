@@ -4,14 +4,16 @@ import { NotFoundError } from 'rxjs';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { HomeComponent } from './components/home/home.component';
 import { RegistrationComponent } from './components/registration/registration.component';
+import { CatalogContainerComponent } from './shared/catalog/catalog-container/catalog-container.component';
 import { CatalogComponent } from './shared/catalog/catalog/catalog.component';
+import { ProductDetailContainerComponent } from './shared/product/detail/product-container/product-detail-container.component';
 import { ProductDetailComponent } from './shared/product/detail/product-detail/product-detail.component';
 
 const routes: Routes = [
 
   { path: "", component: HomeComponent },
-  { path: "catalog", component: CatalogComponent },
-  { path: "catalog/:id", component: ProductDetailComponent },
+  { path: "catalog", component: CatalogContainerComponent },
+  { path: "catalog/:id", component: ProductDetailContainerComponent },
   { path: "about-us", component: ContactsComponent },
   { path: "registration", component: RegistrationComponent },
   { path: "**", component: NotFoundError }
