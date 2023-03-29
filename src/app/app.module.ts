@@ -23,6 +23,8 @@ import { CatalogEndpointService } from './services/endpoint-catalog.service';
 import { CatalogService } from './services/catalog.service';
 import { ProductEndpointService } from './services/endpoint-product.service';
 import { ProductService } from './services/product.service';
+import { CommentEndpointService } from './services/comment-endpoint.service';
+import { CommentsService } from './services/comment.service';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,9 @@ import { ProductService } from './services/product.service';
     CatalogEndpointService,
     CatalogService,
     ProductEndpointService,
-    ProductService
+    ProductService,
+    CommentEndpointService,
+    CommentsService
   ],
   bootstrap: [AppComponent]
 })
